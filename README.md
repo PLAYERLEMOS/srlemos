@@ -24,11 +24,11 @@
                                
             </div>
             <div class="row">
-                <div class="fa- solid fa-lock" style="color: white;">
+                <div class="i"><i  class="fa- solid fa-lock" style="color: white;"></i></div>
                     <input type="password" placeholder="Senha" id="senha" required>
-            </div><br>
+            </div>
+<br>
             <div class="row button">
-
             <div class="pass"><p>Esqueceu a Senha?</p></div><br>
             <input type="submit" value="Login" onclick="Logar(); return false">
             </div>
@@ -36,6 +36,7 @@
             </form>
 </body>
 </html>
+
 
 
 #CSS
@@ -98,14 +99,14 @@
         padding: 30px 20px 25px 20px;
     }
     
-    /* posicionamento dos elementos do formulario  */
+    /*Posicionamento dos elementos do formulario*/
     .wrapper form .row{
     height: 45px;
     margin-bottom: 15px;
     position: relative;
     }
 
-    /*trabalha as bordas e utiliza a fonte*/
+    /*Personaliza as bordas e utiliza a fonte baixada*/
     .wrapper form .row input{
         height: 100%;
         width: 100%;
@@ -113,8 +114,49 @@
         padding-left: 60px;
         border-radius: 5px;
         border: 1px solid rgb(0, 0, 0);
-        
-
 
     }
+
+    /*Elementos, Efeitos, Sombras e etc*/
+    .wrapper form .row .i{
+        position: absolute;
+        width: 47px;
+        height: 100%;
+        font-size: 20px;
+        background: gray;
+        box-shadow: 0 4px 2px -2px rgba(0,0,0,0,0.25);
+        border-radius: 5px 0 0 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+    .wrapper form .pass{
+        margin: -8px 0 20px 0;
+    }
+
+    .wrapper form .pass p{
+        color: rgb(239, 37, 6);
+        font-size: 17px;
+        text-decoration: url(Montebello-regular.ttf)format("truetype"), url("Montebello-Light.otf")format("opentype");
+    }
+
+    .wrapper form .pass p :hover{
+        text-decoration: none;
+
+    }
+    /*Configuração do botão*/
+    .wrapper form .button input{
+        color: white;
+        height: 30px;
+        width: 50px;
+        font-size: 10px;
+        font-weight: 500;
+        padding-left: 0;
+        background: rgb(70, 192, 13);
+        border: 1px solid rgb(0, 0, 0);
+        cursor: pointer;
+    }
+    
+    
 
